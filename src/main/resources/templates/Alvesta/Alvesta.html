@@ -1,0 +1,146 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Bootstrap</title>
+    
+    <link rel="stylesheet" th:href="@{css/Alvesta/Alvesta.css}" />
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Alvesta.se</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Bostad & Miljö<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Bo i Alvesta kommun</a></li>
+                        <li><a href="#">Djur</a></li>
+                        <li><a href="#">Pågaende projekt</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Företag</a></li>
+                    <li><a href="#">Barn & Utbildning</a></li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a itemprop="url" href="Sök">
+                      <i class="search"></i>
+                      <span "glyphicon glyphicon-user">Sök</span>
+                    </a></li>
+                  </ul>
+                  </ul>
+                </div>
+              </nav>
+    </header>
+    <div class="picture">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container">
+                    <h2>Alvesta CITY</h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                  
+                        <div class="item active">
+                          <img th:src="@{/img/Alvesta/1.jpg}" alt="Los Angeles" style="width:1020px; height: 600px;">
+                          <div class="carousel-caption">
+                            <h3>Alvesta</h3>
+                            <p>Alvesta is always so much fun!</p>
+                          </div>
+                        </div>
+            
+                        <div class="item">
+                          <img th:src="@{/img/Alvesta/2.jpg}" alt="Chicago" style="width:1020px; height: 600px;">
+                          <div class="carousel-caption">
+                            <h3>Alvesta,Central</h3>
+                            <p>Thank you, Alvesta!</p>
+                          </div>
+                        </div>
+                      
+                        <div class="item">
+                          <img th:src="@{/img/Alvesta/3.jpg}" alt="New York" style="width:1020px; height: 600px;">
+                          <div class="carousel-caption">
+                            <h3>Alvesta</h3>
+                            <p>We love the Alvesta!</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                      <div class="container2">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <h2>Södra Sveriges mittpunkt</h2>
+                                    <h4>Alvesta kommun - södra Sveriges mittpunkt. Välkommen till en kommun som integrerar lokalt boende med globala möjligheter.</h4>
+                                     <p id="1">Alvesta kommun har nära 20 000 invånare, av dessa bor de flesta i någon av de sex tätorterna - Alvesta är den största. Under rubriken relaterad information
+                                        till höger kan du ta del av mer kommunfakta.Kommunen är till ytan ett "Sverige i miniatyr" - 8 mil lång och 2 mil bred - och består av gammal bondebygd med
+                                        kulturhistoriska rötter som sträcker sig långt tillbaka i tiden.Slätthög, Mistelås, Moheda, Härlöv, Lekaryd, Hjortsberga, Kvenneberga, Aringsås (Alvesta),
+                                        Blädinge, Vislanda, Skatelöv och Västra Torsås utgjorde redan under medeltiden egna socknar. Sedan 1970-talet bildar de tillsammans Alvesta kommun.Genom 
+                                        järnvägens utbyggnad blev de gamla byarna Aringsås och Alfvesta en knutpunkt som växte till ett mera stadsbetonat samhälle. De flesta av kommunens tätorter 
+                                        ligger utmed järnvägslinjer. Något som idag utgör grunden för Alvesta kommun som kommunikationernas kommun.</p>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="container3">
+                        <div class="row">
+                           <div class="col-md-7">
+                               <ul><h3>Alvesta kommun i korthet</h3>
+                                    <ol class="right">
+                                        <li>Alvesta kommuns folkmängd är 19 889 (2017-03-31)</li>
+                                        <li>Befolkningstäthet 20 inv/km2</li>
+                                        <li>Areal: 978 km2</li>
+                                        <li>Kommunen har i förhållande till riket något färre invånare 20–44 år, men fler i övriga åldersgrupper.</li>
+                                        <li>Kommunen har en större andel i förvärvsarbetande i ålder 20–64 år än riket (80 % jämfört med 72 %)</li>
+                                        <li>Utpendlingen från kommunen är större än inpendlingen. 1 460 fler personer pendlar ut än in för arbete.</li>
+                                        <li>Kommunhusets adress är Centralplan 1, 342 80 Alvesta</li>
+                                    </ol>
+                                </ul>
+                            </div>
+                            <div class="col-md-5">
+                              <img th:src="@{/img/Alvesta/kristiina-2-jpg.jpg}" alt="kristiina-2" width="300"> 
+                              <span><h5>Alvestas kommunchef: Kristiina Kosunen Eriksson</h5></span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="container4">
+                     <div class="row">
+                       <div id="col-md-11">
+
+                       </div>
+                     </div>
+                   </div>
+
+    <div class="row">
+        <div class="footer">
+            <div class="col-md-12">
+                <footer class="footer"><b> &copy; Islam Mazayev </b></footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
